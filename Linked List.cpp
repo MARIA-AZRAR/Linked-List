@@ -40,7 +40,8 @@ class list
 	{
 		if (currentNode != 0)	//we should check if current node = 0
 		{
-
+			if (currentNode->getNextNode() == 0)
+			{
 				node * newNode = new node();
 				lastCurrentNode = currentNode;   //Last node is now current node
 				currentNode->setNextNode(newNode);
@@ -48,6 +49,16 @@ class list
 				currentNode->setValue(n);
 				currentNode->setNextNode(0);
 				size++;
+			}
+			else
+			{
+				node * newNode = new node();
+				newNode->setNextNode(currentNode->getNextNode());
+				lastCurrentNode = currentNode;
+				lastCurrentNode->setNextNode(newNode);
+				currentNode = newNode;
+	            currentNode->setValue(n);
+			    size++;
 
 		}
 		else
