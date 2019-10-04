@@ -82,5 +82,15 @@ class list
 	{
 		return size;
 	}
+		void start()
+	{
+		currentNode = headNode;
+	}
+	void move()
+	{
+		lastCurrentNode = currentNode;
+		currentNode = currentNode->getNextNode();
+	}
+
 	
 };
