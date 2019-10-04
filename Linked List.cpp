@@ -21,3 +21,12 @@ public:
 		return  nextNode;
 	}
 };
+
+class list
+{
+	node *headNode;
+	node *currentNode;
+	node *lastCurrentNode;
+	int size;
+	
+};
