@@ -72,4 +72,15 @@ class list
 			size++;
 		}
 	}
+	
+	int get()
+	{
+		return currentNode->getvalue();
+	}
+	
+	int getsize()
+	{
+		return size;
+	}
+	
 };
