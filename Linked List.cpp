@@ -28,5 +28,13 @@ class list
 	node *currentNode;
 	node *lastCurrentNode;
 	int size;
+	public:
+	list()
+	{
+		headNode = 0;
+		currentNode = 0;
+		lastCurrentNode = 0;
+		size = 0;
+	}
 	
 };
