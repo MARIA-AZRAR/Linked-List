@@ -36,9 +36,22 @@ class list
 		lastCurrentNode = 0;
 		size = 0;
 	}
-		void insert(int n)
+	void insert(int n)
 	{
-	
+		if (currentNode != 0)	//we should check if current node = 0
+		{
+
+				node * newNode = new node();
+				lastCurrentNode = currentNode;   //Last node is now current node
+				currentNode->setNextNode(newNode);
+				currentNode = newNode;
+				currentNode->setValue(n);
+				currentNode->setNextNode(0);
+				size++;
+
+		}
+		else
+		{
 			node *newNode = new node();         //now address of created node is stored in newnode
 			headNode = newNode;
 			currentNode = headNode;
@@ -46,7 +59,6 @@ class list
 			currentNode->setValue(n);
 			currentNode->setNextNode(0);
 			size++;
-		
+		}
 	}
-	
 };
