@@ -36,5 +36,17 @@ class list
 		lastCurrentNode = 0;
 		size = 0;
 	}
+		void insert(int n)
+	{
+	
+			node *newNode = new node();         //now address of created node is stored in newnode
+			headNode = newNode;
+			currentNode = headNode;
+			lastCurrentNode = 0;              //if list is empty
+			currentNode->setValue(n);
+			currentNode->setNextNode(0);
+			size++;
+		
+	}
 	
 };
