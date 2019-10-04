@@ -94,3 +94,18 @@ class list
 
 	
 };
+
+int main()
+{
+	list myLinkedList;
+	myLinkedList.insert(10);
+	cout << myLinkedList.get() << endl;
+	myLinkedList.move();
+	myLinkedList.insert(100);
+	cout << myLinkedList.get() << endl;
+	myLinkedList.insert(1000);
+	cout << myLinkedList.get() << endl;
+	cout << myLinkedList.getsize() << endl;
+	return 0;
+}
+
