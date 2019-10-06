@@ -43,8 +43,8 @@ class list
 			if (currentNode->getNextNode() == 0)
 			{
 				node * newNode = new node();
-				lastCurrentNode = currentNode;   //Last node is now current node
-				currentNode->setNextNode(newNode);
+				lastCurrentNode = currentNode;  
+				currentNode->setNextNode(newNode);      //Last node is now current node
 				currentNode = newNode;
 				currentNode->setValue(n);
 				currentNode->setNextNode(0);
