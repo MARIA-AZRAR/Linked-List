@@ -102,6 +102,7 @@ int main()
 	cout << myLinkedList.get() << endl;
 	myLinkedList.move();
 	myLinkedList.insert(100);
+	myLinkedList.insert(10000);
 	cout << myLinkedList.get() << endl;
 	myLinkedList.insert(1000);
 	cout << myLinkedList.get() << endl;
